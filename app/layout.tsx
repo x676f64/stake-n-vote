@@ -14,9 +14,9 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "ChaosDAO Staking and Delegating App",
-  description: "Stake your DOT and KSM with ChaosDAO",
-  metadataBase: new URL("https://thekus.xyz"),
+  title: "ChaosDAO OpenGov Delegation and Staking Web App",
+  description: "Delegate your OpenGov votes with ChaosDAO today.",
+  metadataBase: new URL("https://chaosdao.org"),
 };
 
 export default function RootLayout({

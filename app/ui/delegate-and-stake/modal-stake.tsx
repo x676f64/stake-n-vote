@@ -491,7 +491,7 @@ function AddKusToSet({
   return (
     <>
       <p>Great! You are already staking your {tokenSymbol}</p>
-      <p>Would you like to add The Kus to your nominator set?</p>
+      <p>Would you like to add ChaosDAO to your nominator set?</p>
       <Button
         onClick={async () => {
           const signer = await getSigner();
@@ -505,7 +505,7 @@ function AddKusToSet({
         color="danger"
         size="lg"
       >
-        Add Kus to nominator set
+        Add ChaosDAO to nominator set
       </Button>
     </>
   );
@@ -548,8 +548,8 @@ function ReplaceOneWithKus({
   return (
     <div className="flex flex-col gap-3">
       <p>
-        Your nominator set is full! Select one nomination to replace with Kus
-        Validation
+        Your nominator set is full! Select one nomination to replace with ChaosDAO
+        Validator
       </p>
 
       <RadioGroup
@@ -582,7 +582,7 @@ function ReplaceOneWithKus({
         isDisabled={!selected}
         size="lg"
       >
-        Replace above with Kus
+        Replace above with ChaosDAO
       </Button>
     </div>
   );
