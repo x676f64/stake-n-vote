@@ -89,7 +89,9 @@ export async function sendAndFinalize(
           } else if (status.isInBlock) {
             success = dispatchError ? false : true;
             const signedBlock = await api?.rpc.chain.getBlock(status.asInBlock);
-            blockHeader = signedBlock?.block.header;
+            if (signedBlock && signedBlock.block) {
+              blockHeader = signedBlock.block.header;
+            }
             included = [...events];
             if (toastId) {
               toast.loading(messages.finalizing, {
