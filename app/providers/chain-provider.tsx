@@ -57,7 +57,7 @@ const ChainProvider = ({ children }: ChainProviderProps) => {
     return () => {
       api?.disconnect();
     };
-  }, [activeChain]);
+  }, [activeChain, api]);
 
   return (
     <ChainContext.Provider
