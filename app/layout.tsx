@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
-import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react"
 
-import { NextUIProvider } from "@nextui-org/system";
 import "@polkadot/api-augment";
 import { Providers } from "./providers";
 import { WalletConnect } from "./ui/wallet-connect/wallet-connect";
-import { inter, pt_mono } from "./fonts";
+import { pt_mono } from "./fonts";
 import Link from "next/link";
-import { DiscordIcon, GithubIcon } from "./ui/icons";
-import { GoogleAnalytics } from "nextjs-google-analytics";
-import Script from "next/script";
+import { GithubIcon } from "./ui/icons";
 
 export const metadata: Metadata = {
   title: "ChaosDAO OpenGov Delegation and Staking Web App",
@@ -73,6 +70,7 @@ export default function RootLayout({
             }}
           />
         </Providers>
+        <Analytics />
       </body>
     </html>
   );

@@ -1,11 +1,9 @@
-import { clsx } from "clsx";
-import { Button, ButtonGroup } from "@nextui-org/button";
+import { Button } from "@nextui-org/button";
 
 import { useDisclosure } from "@nextui-org/modal";
 import ModalDelegate from "./modal-delegate";
 import { useChain } from "@/app/providers/chain-provider";
 import ModalStake from "./modal-stake";
-import { on } from "events";
 import { event } from "nextjs-google-analytics";
 import { usePolkadotExtension } from "@/app/providers/extension-provider";
 export function DelegateStakeButtons() {
@@ -14,12 +12,10 @@ export function DelegateStakeButtons() {
 
   const {
     isOpen: isStakingOpen,
-    onOpen: onStakingOpen,
     onOpenChange: onStakingOpenChange,
   } = useDisclosure();
   const {
     isOpen: isDelegatingOpen,
-    onOpen: onDelegatingOpen,
     onOpenChange: onDelegatingOpenChange,
   } = useDisclosure();
   const { chainConfig, activeChain } = useChain();
