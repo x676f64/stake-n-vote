@@ -3,10 +3,10 @@ import { IconSvgProps, KusamaIcon, PolkadotIcon } from "./ui/icons";
 
 // Kusamarian Delegators
 export const POLKADOT_DELEGATOR =
-  "15KHTWdJyzyxaQbBNRmQN89KmFr1jPXXsPHM5Rxvd1Tkb2XZ";
+  "13EyMuuDHwtq5RD6w3psCJ9WvJFZzDDion6Fd2FVAqxz1g7K";
 
 export const KUSAMA_DELEGATOR =
-  "JHTfbt39EL1CcbKteN6hG5L5pWo9XWi9XFiyuS9q24cAc8u";
+  "DCZyhphXsRLcW84G9WmWEXtAA8DKGtVGSFZLJYty8Ajjyfa";
 
 // Kusamarian Validators
 export const POLKADOT_VALIDATOR =
@@ -34,21 +34,21 @@ export const CHAIN_CONFIG: {
     maxNominators: 16,
     delegator: POLKADOT_DELEGATOR,
     validator: POLKADOT_VALIDATOR,
-    poolId: 12, //talisman pool,
+    poolId: 62, //ChaosDAO pool,
     validator_set: [
-      "13zRKESAgaKG4xyYrZnAA4Qdu1iVVMsrdiAnhnnnd4CB6TpU",
-      "15wepZh1jWNqxBjsgErm8HmYiE21n79c5krQJeTsYAjHddeM",
-      "152QidDC4QrtMCyRGiQmvrNyjntvMg2XouCSdoPSeqUNTvsq",
-      "14AakQ4jAmr2ytcrhfmaiHMpj5F9cR6wK1jRrdfC3N1oTbUz",
-      "14hM4oLJCK6wtS7gNfwTDhthRjy5QJ1t3NAcoPjEepo9AH67",
-      "14d2kv44xf9nFnYdms32dYPKQsr5C9urbDzTz7iwU8iHb9az",
-      "16SpacegeUTft9v3ts27CEC3tJaxgvE4uZeCctThFH3Vb24p",
-      "1y6CPLgccsysCEii3M7jQF834GZsz9A3HMcZz3w7RjGPpBL",
-      "153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC",
-      "126RwaHn4MDekLWfUYfiqcVbiQHapwDSAT9vZZS15HLqfDJh",
-      "1cFsLn7o74nmjbRyDtMAnMpQMc5ZLsjgCSz9Np2mcejUK83",
+      "12gPFmRqnsDhc9C5DuXyXBFA23io5fSGtKTSAimQtAWgueD2",
+      "16A4n4UQqgxw5ndeehPjUAobDNmuX2bBoPXVKj4xTe16ktRN",
+      "14ices1G5qTmqhMfDVBECh4jotNDGTLu8fhE9YktWT3cLF2F",
       "123kFHVth2udmM79sn3RPQ81HukrQWCxA1vmTWkGHSvkR4k1",
       "16ce9zrmiuAtdi9qv1tuiQ1RC1xR6y6NgnBcRtMoQeAobqpZ",
+      "152QidDC4QrtMCyRGiQmvrNyjntvMg2XouCSdoPSeqUNTvsq",
+      "15wepZh1jWNqxBjsgErm8HmYiE21n79c5krQJeTsYAjHddeM",
+      "15iA5hpjUecWBbf38Nfegwmtyux25o3LrGaNodfZDxq5nXXE",
+      //"153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC",
+      //"126RwaHn4MDekLWfUYfiqcVbiQHapwDSAT9vZZS15HLqfDJh",
+      //"1cFsLn7o74nmjbRyDtMAnMpQMc5ZLsjgCSz9Np2mcejUK83",
+      //"123kFHVth2udmM79sn3RPQ81HukrQWCxA1vmTWkGHSvkR4k1",
+      //"16ce9zrmiuAtdi9qv1tuiQ1RC1xR6y6NgnBcRtMoQeAobqpZ",
     ],
   },
   Kusama: {
@@ -59,20 +59,29 @@ export const CHAIN_CONFIG: {
     delegator: KUSAMA_DELEGATOR,
     validator: KUSAMA_VALIDATOR,
     validator_set: [
-      "FZjqDWyTA4iP5nUfdYCurwVBz15bj8u1bH3wA5PYmP9fE3j",
-      "HWyLYmpW68JGJYoVJcot6JQ1CJbtUQeTdxfY1kUTsvGCB1r",
-      "GLSikJaXTVWvWtUhzB3Bj6xb5TcnhTUp6EuAkxaCohT9UBv",
-      "J6HxQniipCQLVAJxzC1pn2DphoN3za9eAq1bhkBtMhZ9sid",
-      "CibcGcwnThunMNYrStEWHYdr5WDuy8QnMgT3Vr39JeWCcQs",
-      "DfHkfoKa6xzNMWTNGL8SH8VyY69gajen4ijgmegeU4cZm1H",
-      "Czy1KnZV1DqSPcHd6k1WL6fe4nsyhAuiJ9ALZtVvyomdc8y",
-      "Dfg9gbTwG6aghwLYTfYoV4dXyhCRBLbRyFwENADHmg4zfDF",
-      "HngUT2inDFPBwiey6ZdqhhnmPKHkXayRpWw9rFj55reAqvi",
+      "ECLwZzFusnTr6hdztrkVaTKeQoWxKZBh9e8EzdG92QX7PAy",
+      "FvdwMNP57nRWEsNZZsrHWKqnbmduy4jBAC8MeLmgi9Yp8sA",
       "FVAFUJhJy9tj1X4PaEXX3tDzjaBEVsVunABAdsDMD4ZYmWA",
-      "JBmYvpebasxckBsohyyWse7yggsowfgt5xRJvkzu2txUJdi",
-      "Dn1EdwSDeqmvxy4STJxJuWqHWFMEZyg3rm9Ko1L2fJG26mc",
-      "D6NNbc18fTh4WVQtmrTyLRHGv8SKVtjKFY8uV34k5ydBMaV",
-      "FyL5TJXFEWDHC1yuBGwtngo3LRg4nEQ4ua47p1szMQdh8HR",
+      "EyQ1wV8jQdKYEWh7FiN2mnkFzAepfq6LfKbWLy7qQkLynGg",
+      "HWyLYmpW68JGJYoVJcot6JQ1CJbtUQeTdxfY1kUTsvGCB1r",
+      "DuLr6CeLXezrfumF6EkqLeAx9paMcADYU6zHpSZVB8gvjht",
+      "Ff3xdNrXA47svhiTJHj9uNhxLo29PYjYcJ9cUseAd9FK6iQ",
+      "Hf8C626KBAjitMV7w8AhQWDCiPgUU47htEwbomq5mDMKeyL",
+      "GLSikJaXTVWvWtUhzB3Bj6xb5TcnhTUp6EuAkxaCohT9UBv",
+      "HRgP5To1qDAfaSVAFouJa6oixoNJRRLtjUctwS6Euz6kbUh",
+      "H6rdnNwvHFKw5tfF7kXSssta5AYmysrJrZkRmAbzw6Vm3p8",
+      "D3Sr3PozgPypkBzKBheGSJbqu8m4idenBPaWtZUXLWPtjJT",
+      "DUqVsPLuFLJL2Ev7S7UeWLzVwqk9H7KpezCozKFLrf75bfR",
+      "J3gcCvbntebJUFxETakYBiCaazLy8gsWbS3fVwsHfqT3Lhs",
+      "DVw4Zkfva2MPibAsr8vgoha1T2ow8zreoTWGyBDioQBdfMM",
+      "GA7j1FHWXpEU4kavowEte6LWR3NgZ8bkv4spWa9joiQF5R2",
+      "GL7MYnpQr7jgJqK8wSRUQuob1TvTY7uRJP6LUNeUyvMUhQR",
+      "EvBGLLKdbQeEQuybFBvNmPwZZN54eiCVQvC6gcQXc8zGWeC",
+      "Eices1KaGTYqiazfjJpwyjnz5UzqTxULeYqnmeJNz49gs19",
+      "EXGbhMrQubm7pRkUSkTEGi2rmR764ZM7kStfCRo2cZYa8VE",
+      "Hk7snkgFNhrDRfwveEdpwgwu6D9uUmXwcLy3dZgM2EhHVJq",
+      "FvR2jsv8ztP6PphQ6qwPJRNMKWCULcwHAgStLFR6u7zkwqc",
+      "FkQVeVuQowuQB7HxzR1qJEbFjBiuixQQYZwpu2Fztm2qbmv",
     ],
   },
 };

@@ -466,7 +466,7 @@ function MaybeAddToPool({
           isDisabled={isDisabled}
           size="lg"
         >
-          Stake with Kus Validation and friends
+          Stake with ChaosDAO
         </Button>
       )}
     </>

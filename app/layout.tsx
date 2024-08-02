@@ -14,8 +14,8 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "The Kusamarian Staking and Delegating App",
-  description: "Stake your DOT and KSM with The Kusamarian",
+  title: "ChaosDAO Staking and Delegating App",
+  description: "Stake your DOT and KSM with ChaosDAO",
   metadataBase: new URL("https://thekus.xyz"),
 };
 
@@ -30,13 +30,7 @@ export default function RootLayout({
         <Providers>
           <div className="relative flex flex-col h-screen">
             <header className="h-24">
-              <nav className="flex max-w-7xl mx-auto h-24 p-4 justify-between">
-                <Image
-                  src="kusamarian.png"
-                  alt="Kusamarian Logo"
-                  width={75}
-                  height={80}
-                />
+              <nav className="flex max-w-7xl mx-auto h-24 p-4 justify-end">
                 <WalletConnect />
               </nav>
             </header>
@@ -51,14 +45,7 @@ export default function RootLayout({
                 {" "}
                 <GithubIcon />
               </Link>
-              <Link
-                href="https://discord.gg/CRNDnguJXx
-                "
-                target="_blank"
-                className="pl-2"
-              >
-                <DiscordIcon />
-              </Link>
+              <div>&nbsp;Thanks to the Kusamarian for this dashboard</div>
             </footer>
           </div>
           <Toaster
@@ -86,16 +73,6 @@ export default function RootLayout({
             }}
           />
         </Providers>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-7RG8GF0LMC" />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-7RG8GF0LMC');
-        `}
-        </Script>
       </body>
     </html>
   );

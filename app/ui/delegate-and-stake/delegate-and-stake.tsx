@@ -9,7 +9,7 @@ export function DelegateAndStake() {
       {" "}
       <div className="max-w-xl">
         <h2 className={`text-center mb-12 text-xl font-bold`}>
-          Get your assets to work with The Kusamarian!
+          Get your assets to work with ChaosDAO!
         </h2>
         <ChainSwitch />
         <DelegateStakeButtons />

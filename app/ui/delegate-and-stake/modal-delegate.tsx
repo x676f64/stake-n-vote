@@ -54,7 +54,7 @@ export default function ModalDelegate(props: ModalPropType) {
             <ModalHeader className="flex flex-col gap-1">
               {selectedAccount ? (
                 <>
-                  Delegate Votes to The Kus {tokenSymbol} Delegate
+                  Delegate Votes to The ChaosDAO {tokenSymbol} Delegation
                   <span className="text-xs text-gray-300">
                     ({humanFreeBalance.toFixed(2)} {tokenSymbol} available)
                   </span>
@@ -70,16 +70,7 @@ export default function ModalDelegate(props: ModalPropType) {
                 <>
                   <FormDelegate />
                   <p className="my-2 text-center text-xs">
-                    The Kus Delegate is directed by verified humans from The
-                    Kusamarian community <br />
-                    <a
-                      className="underline"
-                      href="https://discord.gg/eauz25UP"
-                      target="_blank"
-                    >
-                      Join our Discord
-                    </a>{" "}
-                    after you delegate!
+                    The ChaosDAO delegation is directed by a private community of the most ardent Polkadot enthusiasts. <br />
                   </p>
                 </>
               )}

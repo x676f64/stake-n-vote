@@ -8,7 +8,6 @@ import ModalStake from "./modal-stake";
 import { on } from "events";
 import { event } from "nextjs-google-analytics";
 import { usePolkadotExtension } from "@/app/providers/extension-provider";
-
 export function DelegateStakeButtons() {
   const { openExtensionModal, selectedAccount, userWantsConnection } =
     usePolkadotExtension();
@@ -23,7 +22,7 @@ export function DelegateStakeButtons() {
     onOpen: onDelegatingOpen,
     onOpenChange: onDelegatingOpenChange,
   } = useDisclosure();
-  const { chainConfig } = useChain();
+  const { chainConfig, activeChain } = useChain();
 
   const handleStakingOpen = () => {
     event("staking_open", {
@@ -45,8 +44,11 @@ export function DelegateStakeButtons() {
       : openExtensionModal();
   };
 
+  
+
   return (
-    <div className="max-w-xl grid gap-4 md:grid-cols-2 items-center justify-center my-10">
+    <div className={`max-w-xl grid gap-4 ${activeChain !== "Polkadot" ? "md:grid-cols-2" : "grid-cols-1"} items-center justify-center my-10`}>
+      {activeChain !== "Polkadot" && (
       <Button
         variant="bordered"
         className={"border-3 border-white text-white w-full  shadow-xl"}
@@ -55,6 +57,7 @@ export function DelegateStakeButtons() {
       >
         Stake {chainConfig.tokenSymbol}
       </Button>
+    )}
       <Button
         variant="bordered"
         className="border-3 border-white text-white w-full shadow-xl"
