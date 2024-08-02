@@ -113,7 +113,7 @@ export default function ModalStake(props: ModalPropType) {
             <ModalHeader className="flex flex-col gap-1">
               {selectedAccount ? (
                 <>
-                  Stake {tokenSymbol} with Kus Validation{" "}
+                  Stake {tokenSymbol} with ChaosDAO{" "}
                   <span className="text-xs text-gray-300">
                     ({humanFreeBalance.toFixed(2)} {tokenSymbol} available)
                   </span>
