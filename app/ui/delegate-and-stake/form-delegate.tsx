@@ -55,7 +55,7 @@ export default function FormDelegate() {
   const [conviction, setConviction] = useState<number>(
     activeChain === "Kusama" ? 1 : 3
   );
-  const [amount, setAmount] = useState(1);
+  const [amount, setAmount] = useState("0");  // Store amount as string
   const [tracks, setTracks] = useState(new Set<string>(ALL_TRACKS));
   const [isAllSelected, setIsAllSelected] = useState(true);
 
@@ -219,7 +219,7 @@ export default function FormDelegate() {
             placeholder="Enter Delegation Amount"
             classNames={{ description: "text-foreground-600" }}
             value={amount.toString()}
-            onChange={(e) => setAmount(parseInt(e.target.value))}
+            onChange={(e) => setAmount(e.target.value)}
             endContent={
               <>
                 {tokenSymbol}
